@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard chimalli</title>
+</head>
+<body>
+    <h1>IoT | Raspberry pi</h1>
+
+    <h3>Sensores analógicos</h3>
+
+    <div id="dataSensor">
+        <!-- Data añadida de los senssores -->
+    </div>
+    
+    <div>
+        <h3> Control de relay`s </h3>
+        <button type="button" id="send" onclick="sendMessage()">Relay 1</button>
+    </div>
+
+
+    <!-- CDN del script para el cliente con socketio -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
